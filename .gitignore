@@ -1,3 +1,5 @@
+env311/
+notebooks_class/
 .venv
 .vscode
 __pycache__
