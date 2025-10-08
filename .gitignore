@@ -4,6 +4,9 @@ TB/Datasets/4/
 TB/Models/model_RESNET50.keras
 TB/Models/metrics_RESNET50.csv
 TB/Models/summary_RESNET50.csv
+TB/Models/model_DENSENET121.keras
+TB/Models/metrics_DENSENET121.csv
+TB/Models/summary_DENSENET121.csv
 .venv
 .vscode
 __pycache__
