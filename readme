@@ -1,0 +1,32 @@
+# Proyecto: Detección de Anomalías en Radiografías de Tórax
+
+## Objetivo del trabajo
+
+Desarrollar un análisis y un prototipo de clasificación multi-etiqueta para la detección automática de anomalías en radiografías de tórax. El objetivo incluye preprocesamiento, entrenamiento de modelos de visión por computador sobre una versión muestreada del dataset NIH Chest X-ray, y evaluación de métricas relevantes para clasificación multi-etiqueta.
+
+## Alumnos participantes
+
+- Coaguila Fuentes, Edison Jean Franco (U202213102)
+- Aragón Ovalle, Alfredo Mauricio (U202210494)
+- Turpo Queque, Joe Maicol (U202124254)
+
+## Breve descripción del dataset
+
+Se utiliza una versión muestreada del dataset "NIH Chest X-ray" (Random Sample of NIH Chest X-ray Dataset). El conjunto muestro contiene aproximadamente 5,606 imágenes en formato 1024x1024 junto con un archivo CSV de metadatos (`sample_labels.csv`) que incluye atributos como:
+
+- Image Index: nombre del archivo de imagen
+- Finding Labels: etiquetas de diagnóstico (14 patologías más "No Finding")
+- Follow-up, Patient ID, Patient Age, Patient Gender, View Position, OriginalImageWidth/Height, OriginalImagePixelSpacing_x/_y
+
+Las 14 patologías incluyen: Atelectasis, Cardiomegaly, Consolidation, Edema, Effusion, Emphysema, Fibrosis, Hernia, Infiltration, Mass, Nodule, Pleural_Thickening, Pneumonia y Pneumothorax. El dataset completo original comprende 112,120 radiografías provenientes de 30,805 pacientes; para este proyecto se usó la versión muestreada.
+
+
+## Conclusiones
+
+- Se preparó un pipeline de preprocesamiento que incluye lectura de metadatos, partición de datos, y generación de batches con aumentos simples para entrenamiento.
+- Se implementaron modelos iniciales y se entrenaronj en la versión muestreada del dataset. Se calcularon métricas multilabel y umbrales por clase mediante curvas Precision-Recall.
+- En la fase exploratoria y de evaluación, las métricas promedio muestran rendimiento aceptable para un prototipo, pero se recomienda ampliar entrenamiento, balancear clases y aplicar técnicas avanzadas de aumento y regularización para mejorar la detección de patologías raras.
+
+## Licencia
+
+Este trabajo se distribuye bajo la licencia MIT.
