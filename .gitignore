@@ -7,6 +7,7 @@ TB/Models/summary_RESNET50.csv
 TB/Models/model_DENSENET121.keras
 TB/Models/metrics_DENSENET121.csv
 TB/Models/summary_DENSENET121.csv
+EA/
 .venv
 .vscode
 __pycache__
