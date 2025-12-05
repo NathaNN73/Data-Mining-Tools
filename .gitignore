@@ -8,5 +8,6 @@ TB/Models/model_DENSENET121.keras
 TB/Models/metrics_DENSENET121.csv
 TB/Models/summary_DENSENET121.csv
 .venv
+*.keras
 .vscode
 __pycache__
